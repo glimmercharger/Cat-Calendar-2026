@@ -40,9 +40,11 @@
 
         .banner {
             width: 100%;
-            height: 250px;
-            background-size: cover;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
             background-position: center;
+            background-color: #fde7f1;
             position: relative;
             border-bottom: 5px solid #e91e63;
         }
@@ -274,9 +276,9 @@
 <body>
     <div class="container">
         <div class="month">
-            <!-- PUT YOUR IMAGE LINK HERE: url('../images/february-cat.jpg') -->
-            <div class="banner" style="background-image: url('../images/february-cat.jpg')">
-                <div class="month-title">🐱 February 2026</div>
+            <!-- PUT YOUR IMAGE LINK HERE: url('../Cat%20pictures/Febuary.jpg') -->
+            <div class="banner" style="background-image: url('../Cat%20pictures/Febuary.jpg'); background-size: 150%; background-position: center 32%; transform: scaleX(-1);">
+                <div class="month-title" style="transform: scaleX(-1);">🐱 February 2026</div>
             </div>
             <div class="calendar-grid">
                 <div class="weekdays">
