@@ -154,6 +154,115 @@
         }
 
         .nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
+        }
+
+        @keyframes slideUpFadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(0);
+            background: white;
+            min-width: 200px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            z-index: 1000;
+            margin-bottom: 10px;
+            border: 2px solid #f48fb1;
+            max-height: 400px;
+            overflow-y: auto;            transition: opacity 0.3s ease, visibility 0.3s ease;        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            background: white;
+            margin: 0;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-content a:first-child {
+            border-radius: 13px 13px 0 0;
+        }
+
+        .dropdown-content a:last-child {
+            border-radius: 0 0 13px 13px;
+        }
+
+        .dropdown-content a:hover {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            transform: none;
+            box-shadow: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            animation: slideUpFadeIn 0.3s ease;
+        }
+
+        .dropdown-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            border: 2px solid #ad1457;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
+        }
+
+        .dropdown-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            border: 2px solid #ad1457;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+        }
+
+        .dropdown .nav a:hover {
             }
 
             .day {
@@ -221,7 +330,23 @@
 
         <div class="nav">
             <a href="january.html">← Previous Month</a>
-            <a href="../index.html">All Months</a>
+            <div class="dropdown">
+                <span class="dropdown-button">All Months ▼</span>
+                <div class="dropdown-content">
+                    <a href="january.html">January 2026</a>
+                    <a href="february.html">February 2026</a>
+                    <a href="march.html">March 2026</a>
+                    <a href="april.html">April 2026</a>
+                    <a href="may.html">May 2026</a>
+                    <a href="june.html">June 2026</a>
+                    <a href="july.html">July 2026</a>
+                    <a href="august.html">August 2026</a>
+                    <a href="september.html">September 2026</a>
+                    <a href="october.html">October 2026</a>
+                    <a href="november.html">November 2026</a>
+                    <a href="december.html">December 2026</a>
+                </div>
+            </div>
             <a href="march.html">Next Month →</a>
         </div>
     </div>
