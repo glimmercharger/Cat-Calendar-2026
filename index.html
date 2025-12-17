@@ -112,6 +112,17 @@
             margin: 50px 0;
         }
 
+        /* Transition when leaving this page to January */
+        .container.transitioning {
+            animation: zoomOutToCalendar 350ms ease forwards;
+            transform-origin: center center;
+        }
+
+        @keyframes zoomOutToCalendar {
+            from { transform: scale(1); opacity: 1; }
+            to { transform: scale(1.1); opacity: 0; }
+        }
+
         .cta-section h2 {
             font-size: 2.2em;
             margin-bottom: 20px;
@@ -255,5 +266,19 @@
         </footer>
 
     </div>
+    <script>
+        // Play a quick zoom transition before navigating to January
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.querySelector('.cta-button');
+            if (!btn) return;
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                var container = document.querySelector('.container');
+                if (container) container.classList.add('transitioning');
+                var href = btn.getAttribute('href');
+                setTimeout(function () { window.location.href = href; }, 350);
+            });
+        });
+    </script>
 </body>
 </html>

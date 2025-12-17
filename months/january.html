@@ -153,6 +153,10 @@
             box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
         }
 
+        /* Entry animation when arriving from home */
+        .page-enter { animation: pageEnterZoom 350ms ease both; transform-origin: center center; }
+        @keyframes pageEnterZoom { from { transform: scale(0.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
         @keyframes slideUpFadeIn {
             from {
                 opacity: 0;
@@ -286,7 +290,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container page-enter">
         <div class="month">
 
             <div class="banner" style="background-image: url('../Cat%20pictures/Janduary.jpg'); background-size: 150%; background-position: center 25%;">
