@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Calendar 2026 - October</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #ff80ab 100%);
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .month {
+            background: linear-gradient(to bottom, #ffffff 0%, #fff5f7 100%);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(255, 64, 129, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 3px solid #ff80ab;
+        }
+
+        .month:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(255, 64, 129, 0.4);
+        }
+
+        .banner {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-bottom: 5px solid #ff4081;
+        }
+
+        .month-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 64, 129, 0.9), rgba(245, 0, 87, 0.9));
+            color: white;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .calendar-grid {
+            padding: 30px;
+            background: linear-gradient(to bottom, #fff5f7 0%, #ffffff 100%);
+        }
+
+        .weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .weekday {
+            text-align: center;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff4081, #ff5a9c);
+            color: white;
+            font-size: 0.9em;
+            padding: 12px 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(255, 64, 129, 0.3);
+        }
+
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+
+        .day {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ff80ab;
+            border-radius: 10px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ffffff 0%, #fff5f7 100%);
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(255, 64, 129, 0.15);
+        }
+
+        .day:hover {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            border-color: #ff4081;
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(255, 64, 129, 0.4);
+        }
+
+        .day.other-month {
+            color: #c48e9f;
+            background: linear-gradient(135deg, #f8f8f8 0%, #fef5f7 100%);
+            border-color: #f0d9df;
+        }
+
+        .day.today {
+            background: linear-gradient(135deg, #ff4081 0%, #f50057 100%);
+            color: white;
+            font-weight: bold;
+            border-color: #c51162;
+            box-shadow: 0 4px 15px rgba(255, 64, 129, 0.6);
+        }
+
+        .nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .nav a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #ff4081 0%, #f50057 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+            border: 2px solid #c51162;
+        }
+
+        .nav a:hover {
+            }
+
+            .day {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="month">
+            <!-- PUT YOUR IMAGE LINK HERE: url('../images/october-cat.jpg') -->
+            <div class="banner" style="background-image: url('../images/october-cat.jpg')">
+                <div class="month-title">🐱 October 2026</div>
+            </div>
+            <div class="calendar-grid">
+                <div class="weekdays">
+                    <div class="weekday">Sun</div>
+                    <div class="weekday">Mon</div>
+                    <div class="weekday">Tue</div>
+                    <div class="weekday">Wed</div>
+                    <div class="weekday">Thu</div>
+                    <div class="weekday">Fri</div>
+                    <div class="weekday">Sat</div>
+                </div>
+                <div class="days">
+                    <div class="day other-month">27</div>
+                    <div class="day other-month">28</div>
+                    <div class="day other-month">29</div>
+                    <div class="day other-month">30</div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                    <div class="day other-month">1</div>
+                    <div class="day other-month">2</div>
+                    <div class="day other-month">3</div>
+                    <div class="day other-month">4</div>
+                    <div class="day other-month">5</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <a href="september.html">← Previous Month</a>
+            <a href="../index.html">All Months</a>
+            <a href="november.html">Next Month →</a>
+        </div>
+    </div>
+</body>
+</html>
