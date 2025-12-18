@@ -153,7 +153,9 @@
             box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
         }
 
-        /* Entry animation when arriving from home */
+        /* Page transitions */
+        .container.transitioning { animation: zoomOutToNext 350ms ease forwards; transform-origin: center center; }
+        @keyframes zoomOutToNext { from { transform: scale(1); opacity: 1; } to { transform: scale(1.1); opacity: 0; } }
         .page-enter { animation: pageEnterZoom 350ms ease both; transform-origin: center center; }
         @keyframes pageEnterZoom { from { transform: scale(0.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
@@ -370,5 +372,19 @@
             <a href="february.html">Next Month →</a>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('.nav a, .dropdown-content a');
+            links.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var container = document.querySelector('.container');
+                    if (container) container.classList.add('transitioning');
+                    var href = link.getAttribute('href');
+                    setTimeout(function () { window.location.href = href; }, 350);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
