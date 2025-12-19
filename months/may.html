@@ -95,6 +95,7 @@
         .day {
             aspect-ratio: 1;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             border: 2px solid #fff59d;
@@ -103,6 +104,16 @@
             background: linear-gradient(135deg, #ffffff 0%, #fffef5 100%);
             transition: all 0.2s ease;
             box-shadow: 0 2px 5px rgba(255, 193, 7, 0.15);
+            padding: 5px;
+        }
+
+        .event {
+            font-size: 0.95em;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 3px;
+            line-height: 1.2;
+            color: #ffa000;
         }
 
         .day:hover {
