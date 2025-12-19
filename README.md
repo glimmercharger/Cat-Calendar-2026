@@ -16,4 +16,4 @@ If you wanna be put on the calendar open a PR and I'll get there at some point ð
 
 ###### PS: (i havent deployed it to github pages yet so the link wont work until i do!)
 
-###### This Repo is under the MIT Licence!
+###### This Repo is under the MIT Licence
