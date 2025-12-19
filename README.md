@@ -6,7 +6,7 @@ A Cat themed Calendar made in HTML! Made For [meow.hackclub.com!](https://meow.h
 
 # More importantly
 
-If you want to go to the calendar [click here!](https://glimmercharger.github.io/cat-calendar-2026). 
+If you want to go to the calendar [click here!](https://glimmercharger.github.io/Cat-Calendar-2026/). 
 
 ## People mentioned for birthdays and other stuff
 [Me - Will](https://github.com/glimmercharger)
@@ -14,7 +14,5 @@ If you want to go to the calendar [click here!](https://glimmercharger.github.io
 [Safia](https://github.com/SafiaEzzahir)
 
 If you wanna be put on the calendar open a PR and I'll get there at some point 😭.
-
-###### PS: (i havent deployed it to github pages yet so the link wont work until i do!)
 
 ###### This Repo is under the MIT Licence
