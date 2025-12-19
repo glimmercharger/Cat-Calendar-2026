@@ -15,3 +15,5 @@ If you want to go to the calendar [click here!](glimmercharger.github.io/cat-cal
 If you wanna be put on the calendar open a PR and I'll get there at some point 😭.
 
 ###### PS: (i havent deployed it to github pages yet so the link wont work until i do!)
+
+###### This Repo is under the MIT Licence!
