@@ -10,6 +10,7 @@ If you want to go to the calendar [click here!](https://glimmercharger.github.io
 
 ## People mentioned for birthdays and other stuff
 [Me - Will](https://github.com/glimmercharger)
+
 [Safia](https://github.com/SafiaEzzahir)
 
 If you wanna be put on the calendar open a PR and I'll get there at some point 😭.
