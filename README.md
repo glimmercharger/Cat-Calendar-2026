@@ -13,6 +13,8 @@ If you want to go to the calendar [click here!](https://glimmercharger.github.io
 
 [Safia](https://github.com/SafiaEzzahir)
 
+[Freddie](https://github.com/hippogriff101)
+
 If you wanna be put on the calendar open a PR and I'll get there at some point 😭.
 
 ###### This Repo is under the MIT Licence
